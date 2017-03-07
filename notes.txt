@@ -1,0 +1,18 @@
+all projects /projects
+Project3	 /projects/3
+All cards in 3 /projects/3/cards
+				nested resource
+				/cards?project_id=5
+
+
+DB
+
+- Projects
+id: integer
+name: string
+description: text
+license: text
+
+- Cards
+id: integer
+project_id: integer (corresponds to "id" - many to many relationship)
